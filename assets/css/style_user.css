@@ -1,0 +1,210 @@
+/* 基本页面样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* 浅灰色背景 */
+    color: #333; /* 深灰色文字 */
+}
+
+/* 主容器 */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 左侧导航栏样式 */
+.sidebar {
+    width: 250px;
+    background-color: #000; /* 黑色背景 */
+    color: white;
+    padding: 30px 20px; /* 增加内边距，使内容不那么紧凑 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 25px; /* 增加间距，避免过于紧凑 */
+}
+
+.sidebar ul li a {
+    color: #ccc; /* 浅灰色文字 */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #000; /* 黑色背景 */
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333; /* 深灰色 */
+    color: white;
+}
+
+/* 主内容区域样式 */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff; /* 白色背景 */
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* 深灰色标题 */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #000; /* 黑色背景 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #333; /* 深灰色 */
+}
+
+/* 用户列表表格 */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #000; /* 黑色背景 */
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* 浅灰色 */
+}
+
+.user-table tr:nth-child(odd) {
+    background-color: #fff; /* 白色 */
+}
+
+/* 编辑和删除按钮 */
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #333; /* 深灰色 */
+}
+
+.btn-edit:hover {
+    background-color: #444; /* 更深的灰色 */
+}
+
+.btn-delete {
+    background-color: #897878; /* 棕色 */
+}
+
+.btn-delete:hover {
+    background-color: #111; /* 更深的黑色 */
+}
+
+/* 分页样式 */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #333;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a:first-child,
+.pagination a:last-child {
+    font-weight: bold;
+}
+
+.pagination select {
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+/* 搜索框样式 */
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* 选择跳转页面下拉菜单 */
+form select {
+    padding: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
